@@ -27,5 +27,8 @@
     "esbuild@0.28.1": true,
     "fsevents@2.3.3": true,
     "vue-demi@0.14.10": true
+  },
+  "engines": {
+    "node": ">=24"
   }
 }
