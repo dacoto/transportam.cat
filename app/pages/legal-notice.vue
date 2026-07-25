@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import PrivacyPolicySection from "~/components/PrivacyPolicySection.vue";
+import ObfuscatedEmail from "~/components/ObfuscatedEmail.vue";
 </script>
 
 <template>
@@ -18,7 +19,7 @@ import PrivacyPolicySection from "~/components/PrivacyPolicySection.vue";
         </p>
         <ul class="mt-4 space-y-1">
           <li>Titular: <strong>David Cortés Toledano</strong></li>
-          <li>Correu electrònic: <a href="mailto:hello@transportam.cat" class="text-primary underline">hello@transportam.cat</a></li>
+          <li>Correu electrònic: <ObfuscatedEmail /></li>
         </ul>
       </PrivacyPolicySection>
       <PrivacyPolicySection title="Objecte">

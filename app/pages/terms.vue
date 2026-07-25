@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import PrivacyPolicySection from "~/components/PrivacyPolicySection.vue";
+import ObfuscatedEmail from "~/components/ObfuscatedEmail.vue";
 </script>
 
 <template>
@@ -85,7 +86,7 @@ import PrivacyPolicySection from "~/components/PrivacyPolicySection.vue";
       <PrivacyPolicySection title="Contacte">
         <p>
           Per a qualsevol qüestió relacionada amb aquests termes, pots contactar-nos a
-          <a href="mailto:hello@transportam.cat" class="text-primary underline">hello@transportam.cat</a>.
+          <ObfuscatedEmail />.
         </p>
       </PrivacyPolicySection>
     </ul>

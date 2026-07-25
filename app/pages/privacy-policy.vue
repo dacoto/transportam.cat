@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import PrivacyPolicySection from "~/components/PrivacyPolicySection.vue";
+import ObfuscatedEmail from "~/components/ObfuscatedEmail.vue";
 </script>
 
 <template>
@@ -106,7 +107,7 @@ import PrivacyPolicySection from "~/components/PrivacyPolicySection.vue";
           Si tens preguntes o dubtes sobre aquesta política de privacitat, pots contactar-nos a:
         </p>
         <p>
-          <span>Correu electrònic: <a href="mailto:hello@transportam.cat" class="text-primary underline">hello@transportam.cat</a></span>
+          <span>Correu electrònic: <ObfuscatedEmail /></span>
         </p>
       </PrivacyPolicySection>
     </ul>
