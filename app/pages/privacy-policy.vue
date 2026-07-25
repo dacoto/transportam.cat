@@ -6,7 +6,7 @@ import PrivacyPolicySection from "~/components/PrivacyPolicySection.vue";
   <Container class="py-20 sm:py-32">
     <div class="mx-auto max-w-2xl sm:text-center">
       <h1 class="text-3xl font-medium tracking-tight text-neutral-900">Política de Privacitat</h1>
-      <p class="mt-2 text-sm text-neutral-600">Última actualització: 2026-07-21</p>
+      <p class="mt-2 text-sm text-neutral-600">Última actualització: 2026-07-25</p>
     </div>
 
     <ul role="list" class="mt-16 space-y-10">
@@ -26,7 +26,9 @@ import PrivacyPolicySection from "~/components/PrivacyPolicySection.vue";
         <p class="mt-4">
           Recollim dades d'ús anònimes per millorar l'aplicació (vegeu la secció «Anàlisi d'ús») i, per mantenir-la
           gratuïta, mostrem publicitat a través de Google AdMob, un servei de tercers que pot recollir determinades
-          dades del teu dispositiu tal com es descriu a la secció «Publicitat».
+          dades del teu dispositiu tal com es descriu a la secció «Publicitat». També oferim una subscripció opcional
+          de pagament que elimina els anuncis, gestionada tal com es descriu a la secció «Subscripcions i
+          monetització».
         </p>
       </PrivacyPolicySection>
       <PrivacyPolicySection title="Anàlisi d'ús">
@@ -37,8 +39,10 @@ import PrivacyPolicySection from "~/components/PrivacyPolicySection.vue";
         </p>
         <p class="mt-4">
           L'utilitzem exclusivament per millorar l'aplicació i decidir quines noves funcionalitats prioritzar. Aquestes
-          dades es tracten en servidors propis, no es comparteixen amb tercers ni surten de la nostra infraestructura, i
-          s'eliminen automàticament al cap de 6 mesos.
+          dades d'ús es tracten en servidors propis, no es comparteixen amb tercers i s'eliminen automàticament al cap
+          de 6 mesos. L'únic element que compartim és un identificador d'instal·lació anònim, que enviem a RevenueCat
+          per vincular les dades de subscripció i publicitat (vegeu la secció «Subscripcions i monetització»); aquest
+          identificador no permet identificar-te personalment.
         </p>
       </PrivacyPolicySection>
       <PrivacyPolicySection title="Publicitat">
@@ -54,6 +58,27 @@ import PrivacyPolicySection from "~/components/PrivacyPolicySection.vue";
           <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-primary underline">Política de privacitat de Google</a>
           i a
           <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer" class="text-primary underline">Com Google fa servir les dades d'AdMob</a>.
+        </p>
+      </PrivacyPolicySection>
+      <PrivacyPolicySection title="Subscripcions i monetització">
+        <p>
+          Oferim una subscripció opcional de pagament que elimina els anuncis. Les compres es processen a través de
+          l'App Store d'Apple o de Google Play, i fem servir <strong>RevenueCat, Inc.</strong> (Estats Units) com a
+          proveïdor per gestionar i validar les subscripcions.
+        </p>
+        <p class="mt-4">
+          Per fer-ho, RevenueCat tracta dades relacionades amb la compra (com ara l'estat de la subscripció i els rebuts
+          de transacció; les dades de pagament les gestionen directament Apple i Google, no RevenueCat), un identificador
+          d'instal·lació anònim i, en el cas dels usuaris amb anuncis, esdeveniments publicitaris agregats (impressions,
+          clics i ingressos per anunci). Aquestes dades ens ofereixen una visió unificada de la monetització i no
+          permeten identificar-te personalment.
+        </p>
+        <p class="mt-4">
+          RevenueCat, Inc. té la seu als Estats Units i actua com a encarregat del tractament (<em>processor</em>) en nom
+          nostre. Aquesta transferència internacional de dades està emparada per les clàusules contractuals tipus
+          (<em>Standard Contractual Clauses</em>) de la Comissió Europea, tal com estableix l'acord de tractament de dades
+          (DPA) de RevenueCat. Pots consultar com tracta la informació a la
+          <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer" class="text-primary underline">Política de privacitat de RevenueCat</a>.
         </p>
       </PrivacyPolicySection>
       <PrivacyPolicySection title="Consentiment i compliment de les normatives europees">
