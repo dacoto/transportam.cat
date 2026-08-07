@@ -7,7 +7,7 @@ import ObfuscatedEmail from "~/components/ObfuscatedEmail.vue";
   <Container class="py-20 sm:py-32">
     <div class="mx-auto max-w-2xl sm:text-center">
       <h1 class="text-3xl font-medium tracking-tight text-neutral-900">Termes i condicions d'ús</h1>
-      <p class="mt-2 text-sm text-neutral-600">Última actualització: 2026-07-25</p>
+      <p class="mt-2 text-sm text-neutral-600">Última actualització: 2026-08-08</p>
     </div>
 
     <ul role="list" class="mt-16 space-y-10">
@@ -32,6 +32,15 @@ import ObfuscatedEmail from "~/components/ObfuscatedEmail.vue";
           no autoritzades; (b) intentar accedir, alterar o interferir en els sistemes o dades del servei; (c) reproduir,
           revendre o explotar comercialment el servei o els seus continguts sense autorització; ni (d) fer-ne un ús que
           pugui perjudicar-ne el funcionament o altres persones usuàries.
+        </p>
+      </PrivacyPolicySection>
+      <PrivacyPolicySection title="Informes d'errors opcionals">
+        <p>
+          L'aplicació permet activar voluntàriament l'enviament d'informes tècnics d'errors per ajudar-nos a detectar i
+          corregir problemes. Aquesta funció està desactivada per defecte en la versió de producció, es pot desactivar
+          en qualsevol moment i no és necessària per utilitzar les funcions principals del servei. El tractament de les
+          dades associades es descriu a la
+          <NuxtLink to="/privacy-policy" class="text-primary underline">Política de privacitat</NuxtLink>.
         </p>
       </PrivacyPolicySection>
       <PrivacyPolicySection title="Subscripcions de pagament">

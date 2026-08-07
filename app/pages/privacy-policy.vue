@@ -7,7 +7,7 @@ import ObfuscatedEmail from "~/components/ObfuscatedEmail.vue";
   <Container class="py-20 sm:py-32">
     <div class="mx-auto max-w-2xl sm:text-center">
       <h1 class="text-3xl font-medium tracking-tight text-neutral-900">Política de Privacitat</h1>
-      <p class="mt-2 text-sm text-neutral-600">Última actualització: 2026-07-25</p>
+      <p class="mt-2 text-sm text-neutral-600">Última actualització: 2026-08-08</p>
     </div>
 
     <ul role="list" class="mt-16 space-y-10">
@@ -25,11 +25,12 @@ import ObfuscatedEmail from "~/components/ObfuscatedEmail.vue";
           facilitis dades personals.
         </p>
         <p class="mt-4">
-          Recollim dades d'ús anònimes per millorar l'aplicació (vegeu la secció «Anàlisi d'ús») i, per mantenir-la
-          gratuïta, mostrem publicitat a través de Google AdMob, un servei de tercers que pot recollir determinades
-          dades del teu dispositiu tal com es descriu a la secció «Publicitat». També oferim una subscripció opcional
-          de pagament que elimina els anuncis, gestionada tal com es descriu a la secció «Subscripcions i
-          monetització».
+          Recollim dades d'ús anònimes per millorar l'aplicació (vegeu la secció «Anàlisi d'ús») i, només si ho actives
+          voluntàriament, informes d'errors tècnics seudonimitzats (vegeu la secció «Informes d'errors»). Per
+          mantenir-la gratuïta, mostrem publicitat a través de Google AdMob, un servei de tercers que pot recollir
+          determinades dades del teu dispositiu tal com es descriu a la secció «Publicitat». També oferim una
+          subscripció opcional de pagament que elimina els anuncis, gestionada tal com es descriu a la secció
+          «Subscripcions i monetització».
         </p>
       </PrivacyPolicySection>
       <PrivacyPolicySection title="Anàlisi d'ús">
@@ -44,6 +45,42 @@ import ObfuscatedEmail from "~/components/ObfuscatedEmail.vue";
           de 6 mesos. L'únic element que compartim és un identificador d'instal·lació anònim, que enviem a RevenueCat
           per vincular les dades de subscripció i publicitat (vegeu la secció «Subscripcions i monetització»); aquest
           identificador no permet identificar-te personalment.
+        </p>
+      </PrivacyPolicySection>
+      <PrivacyPolicySection title="Informes d'errors">
+        <p>
+          Pots activar voluntàriament l'enviament d'informes d'errors des de la configuració de privacitat de
+          l'aplicació. Aquesta opció està <strong>desactivada per defecte en la versió de producció</strong>. Mentre
+          estigui desactivada, el servei d'informes d'errors no s'inicialitza i no recull ni envia cap informe. Pots
+          retirar el consentiment en qualsevol moment desactivant la mateixa opció; el canvi té efecte immediat i no
+          afecta les funcions principals de l'aplicació.
+        </p>
+        <p class="mt-4">
+          Si l'actives, utilitzem <strong>Sentry</strong>, un servei de Functional Software, Inc. (Estats Units), per
+          detectar, diagnosticar i corregir errors de l'aplicació. Els informes poden incloure el tipus i el missatge
+          de l'error, la traça de la pila, l'estat dels fils, la data i hora, la versió de l'aplicació, informació
+          tècnica del dispositiu i del sistema operatiu, un identificador d'instal·lació seudònim i determinades
+          preferències no sensibles de visualització, mapa, publicitat i subscripció que ajuden a reproduir l'error.
+        </p>
+        <p class="mt-4">
+          Hem configurat Sentry perquè no enviï el teu nom, correu electrònic ni adreça IP, ni captures de pantalla,
+          jerarquia de vistes, ubicació precisa, contingut introduït per l'usuari, registres, reproduccions de sessió,
+          dades de rendiment o perfils. Els informes són seudonimitzats: l'identificador d'instal·lació permet agrupar
+          errors del mateix dispositiu, però no revela directament la teva identitat.
+        </p>
+        <p class="mt-4">
+          La base jurídica d'aquest tractament és el teu consentiment. Sentry actua com a encarregat del tractament i
+          les dades del servei s'allotgen a la seva regió europea, a Alemanya. Sentry i alguns dels seus subencarregats
+          poden tractar dades fora de l'Espai Econòmic Europeu amb les garanties previstes al seu acord de tractament
+          de dades, incloent-hi, quan correspongui, el Marc de Privacitat de Dades UE-EUA i les clàusules contractuals
+          tipus de la Comissió Europea. Pots consultar la
+          <a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer" class="text-primary underline">Política de privacitat de Sentry</a>
+          i el seu
+          <a href="https://sentry.io/legal/dpa/" target="_blank" rel="noopener noreferrer" class="text-primary underline">Acord de tractament de dades</a>.
+        </p>
+        <p class="mt-4">
+          Si vols sol·licitar l'accés o la supressió d'informes associats a la teva instal·lació, contacta'ns i indica
+          l'identificador d'instal·lació que trobaràs a la configuració de privacitat de l'aplicació.
         </p>
       </PrivacyPolicySection>
       <PrivacyPolicySection title="Publicitat">
