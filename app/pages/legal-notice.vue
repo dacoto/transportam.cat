@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import PrivacyPolicySection from "~/components/PrivacyPolicySection.vue";
 import ObfuscatedEmail from "~/components/ObfuscatedEmail.vue";
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://transportam.cat/legal-notice' }],
+})
 </script>
 
 <template>

@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import ObfuscatedEmail from "~/components/ObfuscatedEmail.vue";
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://transportam.cat/contact' }],
+})
 </script>
 
 <template>

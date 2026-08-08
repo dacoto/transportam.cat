@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import GooglePlayLogo from "~/assets/svg/google-play.svg?component"
 import AppStoreLogo from "~/assets/svg/app-store.svg?component"
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://transportam.cat/download' }],
+})
 </script>
 
 <template>

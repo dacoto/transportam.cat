@@ -5,6 +5,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
 
+  site: {
+    url: 'https://transportam.cat',
+  },
+
   vite: {
     plugins: [
       tailwindcss(),
@@ -35,14 +39,13 @@ export default defineNuxtConfig({
         // { name: 'twitter:image', content: '/og-image.jpg' }
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' },
-        { rel: 'canonical', href: 'https://transportam.cat' }
+        { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' }
       ],
       title: "Transporta'm | El transport públic a temps real"
     }
   },
 
-  modules: ['nuxt-svgo'],
+  modules: ['nuxt-svgo', '@nuxtjs/sitemap'],
 
   svgo: {
     defaultImport: 'component',
