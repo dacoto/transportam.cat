@@ -13,7 +13,7 @@ const carouselRef = ref<CarouselExposed>()
       <div class="w-full flex-none snap-center px-4 sm:px-6">
         <div class="relative transform overflow-hidden rounded-2xl bg-neutral-800 px-5 py-6">
           <PhoneFrame class="relative mx-auto w-full max-w-[366px]">
-            <img :src=feature.img alt="App image" />
+            <img loading="lazy" :src="feature.img" :alt="`Pantalla de ${feature.title} a Transporta'm`" />
           </PhoneFrame>
           <div class="absolute inset-x-0 bottom-0 bg-neutral-800/95 p-6 backdrop-blur-sm sm:p-10">
             <Icon :icon="feature.icon" class="h-8 w-8 fill-neutral-300" />

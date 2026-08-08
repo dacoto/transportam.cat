@@ -2,6 +2,19 @@
 import PrivacyPolicySection from "~/components/PrivacyPolicySection.vue";
 import ObfuscatedEmail from "~/components/ObfuscatedEmail.vue";
 
+const title = "Avís legal | Transporta'm"
+const description = "Consulta la informació legal, les condicions d’accés i les dades del titular de Transporta'm."
+
+useSeoMeta({
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description,
+  ogUrl: 'https://transportam.cat/legal-notice',
+  twitterTitle: title,
+  twitterDescription: description,
+})
+
 useHead({
   link: [{ rel: 'canonical', href: 'https://transportam.cat/legal-notice' }],
 })

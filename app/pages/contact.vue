@@ -1,6 +1,19 @@
 <script setup lang="ts">
 import ObfuscatedEmail from "~/components/ObfuscatedEmail.vue";
 
+const title = "Contacte | Transporta'm"
+const description = "Contacta amb l’equip de Transporta'm per fer-nos arribar dubtes, suggeriments o avisos sobre l’aplicació."
+
+useSeoMeta({
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description,
+  ogUrl: 'https://transportam.cat/contact',
+  twitterTitle: title,
+  twitterDescription: description,
+})
+
 useHead({
   link: [{ rel: 'canonical', href: 'https://transportam.cat/contact' }],
 })

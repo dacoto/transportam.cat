@@ -11,9 +11,7 @@
       <p class="mt-2 text-lg text-neutral-600 sm:text-center">
         El transport públic a temps real a un mateix lloc i accessible per tothom.
       </p>
-      <ClientOnly>
-        <ReviewsGrid />
-      </ClientOnly>
+      <ReviewsGrid />
     </Container>
   </section>
 </template>

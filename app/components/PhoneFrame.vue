@@ -4,6 +4,6 @@
     <div class="absolute left-[calc(16/366*100%)] top-[calc(13/729*100%)] grid h-[calc(705/729*100%)] w-[calc(336/366*100%)] transform grid-cols-1 overflow-hidden rounded-4xl">
       <slot />
     </div>
-    <img src="/phone-frame.webp" alt="Phone frame" class="pointer-events-none absolute inset-0 h-full w-full" />
+    <img src="/phone-frame.webp" alt="" class="pointer-events-none absolute inset-0 h-full w-full" />
   </div>
 </template>

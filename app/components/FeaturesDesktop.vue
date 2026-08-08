@@ -23,7 +23,7 @@
         <CircleBackground class="animate-spin-slower" />
       </div>
       <PhoneFrame class="z-10 mx-auto w-full max-w-[366px]">
-        <img :src=features[selected]!.img alt="App image" />
+        <img loading="lazy" :src="features[selected]!.img" :alt="`Pantalla de ${features[selected]!.title} a Transporta'm`" />
       </PhoneFrame>
     </div>
   </div>

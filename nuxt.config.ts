@@ -47,6 +47,38 @@ export default defineNuxtConfig({
 
   modules: ['nuxt-svgo', '@nuxtjs/sitemap'],
 
+  sitemap: {
+    discoverImages: false,
+    urls: [
+      {
+        loc: '/',
+        lastmod: '2026-08-08',
+        images: [
+          {
+            loc: '/stop_departures.webp',
+            title: "Properes sortides a Transporta'm",
+            caption: "Consulta les properes sortides del transport públic en temps real.",
+          },
+          {
+            loc: '/trip_details.webp',
+            title: "Detall d’un trajecte a Transporta'm",
+            caption: "Informació detallada per planificar un trajecte en transport públic.",
+          },
+          {
+            loc: '/alerts.webp',
+            title: "Incidències del servei a Transporta'm",
+            caption: "Consulta les alertes i l’estat del servei del transport públic.",
+          },
+        ],
+      },
+      { loc: '/contact', lastmod: '2026-08-08' },
+      { loc: '/download', lastmod: '2026-08-08' },
+      { loc: '/legal-notice', lastmod: '2026-08-08' },
+      { loc: '/privacy-policy', lastmod: '2026-08-08' },
+      { loc: '/terms', lastmod: '2026-08-08' },
+    ],
+  },
+
   svgo: {
     defaultImport: 'component',
   },

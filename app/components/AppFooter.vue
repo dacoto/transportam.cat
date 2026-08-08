@@ -1,5 +1,18 @@
 <script setup lang="ts">
 import Icon from "~/assets/svg/icon.svg?component"
+
+const footerLinks = [
+  { to: '/#features', label: 'Funcionalitats' },
+  { to: '/#reviews', label: 'Valoracions' },
+  { to: '/download', label: 'Descarregar' },
+  { to: '/contact', label: 'Contacte' },
+]
+
+const legalLinks = [
+  { to: '/legal-notice', label: 'Avís legal' },
+  { to: '/privacy-policy', label: 'Privacitat' },
+  { to: '/terms', label: 'Termes i condicions' },
+]
 </script>
 
 <template>
@@ -14,13 +27,30 @@ import Icon from "~/assets/svg/icon.svg?component"
               <p class="text-sm">El transport a temps real.</p>
             </div>
           </div>
-          <nav class="mt-11 flex gap-8">
-            <NavLinks />
+          <nav aria-label="Navegació del peu" class="mt-11 flex flex-wrap gap-x-8 gap-y-4">
+            <NuxtLink
+              v-for="link in footerLinks"
+              :key="link.to"
+              :to="link.to"
+              class="text-sm text-neutral-600 transition-colors hover:text-neutral-900"
+            >
+              {{ link.label }}
+            </NuxtLink>
           </nav>
         </div>
         <DownloadQrCard />
       </div>
       <div class="flex flex-col items-center border-t border-neutral-200 pt-8 pb-12 md:flex-row-reverse md:justify-between md:pt-6">
+        <nav aria-label="Informació legal" class="flex flex-wrap justify-center gap-x-6 gap-y-3">
+          <NuxtLink
+            v-for="link in legalLinks"
+            :key="link.to"
+            :to="link.to"
+            class="text-sm text-neutral-500 transition-colors hover:text-neutral-900"
+          >
+            {{ link.label }}
+          </NuxtLink>
+        </nav>
         <p class="mt-6 text-sm text-neutral-500 md:mt-0">
           &copy; Copyright {{ new Date().getFullYear() }}. Tots els drets reservats.
         </p>

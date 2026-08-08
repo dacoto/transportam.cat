@@ -2,6 +2,19 @@
 import PrivacyPolicySection from "~/components/PrivacyPolicySection.vue";
 import ObfuscatedEmail from "~/components/ObfuscatedEmail.vue";
 
+const title = "Política de privacitat | Transporta'm"
+const description = "Consulta com Transporta'm tracta les dades d’ús, els informes d’errors, la publicitat i les subscripcions de l’aplicació."
+
+useSeoMeta({
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description,
+  ogUrl: 'https://transportam.cat/privacy-policy',
+  twitterTitle: title,
+  twitterDescription: description,
+})
+
 useHead({
   link: [{ rel: 'canonical', href: 'https://transportam.cat/privacy-policy' }],
 })

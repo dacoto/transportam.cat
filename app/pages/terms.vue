@@ -2,6 +2,19 @@
 import PrivacyPolicySection from "~/components/PrivacyPolicySection.vue";
 import ObfuscatedEmail from "~/components/ObfuscatedEmail.vue";
 
+const title = "Termes i condicions d’ús | Transporta'm"
+const description = "Consulta els termes i les condicions que regulen l’accés i l’ús de l’aplicació Transporta'm."
+
+useSeoMeta({
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description,
+  ogUrl: 'https://transportam.cat/terms',
+  twitterTitle: title,
+  twitterDescription: description,
+})
+
 useHead({
   link: [{ rel: 'canonical', href: 'https://transportam.cat/terms' }],
 })
