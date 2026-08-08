@@ -7,6 +7,8 @@ import FgcLogo from "~/assets/svg/fgc.svg?component"
 import TramLogo from "~/assets/svg/tram.svg?component"
 import TmbLogo from "~/assets/svg/tmb.svg?component"
 import AmbLogo from "~/assets/svg/amb.svg?component"
+import BicingLogo from "~/assets/svg/bicing.svg?component"
+import GanxetaLogo from "~/assets/svg/ganxeta.svg?component"
 import Award4DLogo from "~/assets/svg/4d_award.svg?component"
 
 const operators = [
@@ -16,8 +18,8 @@ const operators = [
   { component: TramLogo, label: 'Tram' },
   { component: TmbLogo, label: 'TMB' },
   { component: AmbLogo, label: 'AMB' },
-  { component: null, label: 'Bicing' },
-  { component: null, label: 'Ganxeta' }
+  { component: BicingLogo, label: 'Bicing' },
+  { component: GanxetaLogo, label: 'Ganxeta' }
 ]
 
 const awards = [
@@ -35,7 +37,7 @@ const awards = [
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
         <div class="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
           <h1 class="text-4xl font-medium tracking-tight text-neutral-900">
-            El transport públic en temps real a Catalunya.
+            El transport a temps real.
           </h1>
           <p class="mt-6 text-lg text-neutral-600">
             Consulta l’estat del transport públic a temps real,
@@ -86,10 +88,7 @@ const awards = [
                 :key="operator.label"
                 class="flex"
               >
-                <component v-if="operator.component" :is="operator.component" class="w-22" />
-                <span v-else class="flex h-10 items-center text-base font-semibold text-neutral-700">
-                  {{ operator.label }}
-                </span>
+                <component :is="operator.component" class="w-22" />
               </li>
             </ul>
           </div>

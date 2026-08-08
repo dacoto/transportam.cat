@@ -53,10 +53,7 @@ const faqs = [
           Preguntes freqüents
         </h2>
         <p class="mt-2 text-lg text-neutral-600">
-          Si tens qualsevol altra pregunta,
-          <NuxtLink to="/contact" class="text-neutral-900 underline">
-            contacta amb nosaltres
-          </NuxtLink>.
+          Si tens qualsevol altra pregunta, contacta amb nosaltres.
         </p>
       </div>
       <ul
